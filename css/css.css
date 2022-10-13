@@ -1,6 +1,4 @@
 .footer { 
-    position: absolute;
-    bottom: 0;
     width: 100%;
     min-height: 60px;
     background-color: #37393a;
@@ -10,7 +8,7 @@
 .footer p {
     color: lightgray;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
 }
 
 .header-img {
@@ -19,4 +17,22 @@
     height:200px;
     background-size:cover;
     background-position:center;
+}
+
+.card {
+    background-color:green;
+    border-radius:4px;
+    overflow:hidden;
+}
+
+.animal-img {
+    height:200px;
+}
+
+.expand { 
+    transition: all .2s ease-in-out; 
+}
+    
+.expand:hover { 
+    transform: scale(1.1); 
 }
