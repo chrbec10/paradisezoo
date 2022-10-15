@@ -1,9 +1,9 @@
 .footer { 
+    bottom: 0;
     width: 100%;
     min-height: 60px;
     background-color: #37393a;
-    margin-top:50px;
-    padding-top: 20px;
+    padding-top:20px;
 }
 
 .footer p {
@@ -18,32 +18,26 @@
     height:200px;
     background-size:cover;
     background-position:center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.header-txt {
-    color:white;
-    font-weight:bold;
+iframe {
+    border: none; 
+	padding-bottom: 10px;
 }
+
+body {
+	background-color: #E3FAE9;
+}
+
 
 .card {
-    background-color:green;
-    border-radius:4px;
-    overflow:hidden;
+	background-color: #C5E6CB;
 }
 
-.animal-img {
-    height:200px;
-    max-width:100%;
-    object-fit:cover;
-}
-
-.expand { 
+.swell { 
     transition: all .2s ease-in-out; 
 }
     
-.expand:hover { 
-    transform: scale(1.15); 
+.swell:hover { 
+    transform: scale(1.05); 
 }
