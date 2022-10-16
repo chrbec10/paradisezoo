@@ -38,7 +38,7 @@ html, body {
 .animal-card {
     border-radius: 4px;
     overflow: hidden;
-    background-color: #C5E6CB;
+    background-color: white;
 }
 
 .animal-img {
@@ -49,6 +49,7 @@ html, body {
 
 .animal-txt {
     padding: 1rem;
+}
 
 iframe {
     border: none; 
