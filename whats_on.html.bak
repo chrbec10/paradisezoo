@@ -13,23 +13,31 @@
 <!-- Start of Body Tag -->
 <body>
 <!--  -->
-    <header>
-        <div class="container-fluid">
-            <img>
+<header>
+        <div class="container-fluid header-img">
+            <img src="./img/header-logo.png" style="height:200px">
         </div>
     </header>
 <!-- Added our navigation bar produced by Chris. -->
     <nav class="navbar navbar-expand-lg bg-success">
         <div class="container">
-            <ul class="navbar-nav">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/header-logo.png" alt="Paradise Zoo" height="40">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
 <!-- Using the href tag to link our webpages together. -->
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="animals.html">Animals</a></li>
-                <li class="nav-item"><a class="nav-link active" href="whats_on.html">Plan Your Day</a></li>
-                <li class="nav-item"><a class="nav-link" href="shoppage.html">Merchandise</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="contactpage.html">Contact Us</a></li>
-            </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="animals.html">Animals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Plan Your Day</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Merchandise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 <!-- Start of Main tag, this is where the bulk of the webpage is done. -->
@@ -42,7 +50,7 @@
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell">
 <!-- Adding an image using img tag, and text using h3 tag. -->
-					<img src="assets/bear.PNG" width="100%" height="100%">
+					<img src="img/bear.PNG" width="100%" height="100%">
 					<div class="card-body">
 						<h3>Bear juggling </h3>
 						<h3>Time: 09:00 - 10:30</h3>
@@ -62,7 +70,7 @@
             <div class="col-sm-6 d-flex">
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell">
-					<img src="assets/mascot.PNG" width="100%" height="100%">
+					<img src="img/mascot.PNG" width="100%" height="100%">
 					<div class="card-body">
 						<h3>Mascot show (Kid show)</h3>
 						<h3>Time: 11:00 - 12:00</h3>
@@ -86,7 +94,7 @@
             <div class="col-sm-6 d-flex">
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell">
-					<img src="assets/red panda.jfif" width="100%" height="100%">
+					<img src="img/red panda.jfif" width="100%" height="100%">
 						<div class="card-body">
 						<h3>Red Panda conservation conversation</h3>
 						<h3>Time: 13:00 - 14:00</h3>
@@ -106,7 +114,7 @@
 			<div class="col-sm-6 d-flex">
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell" >
-					<img src="assets/parade.jpg" width="100%" height="100%">
+					<img src="img/parade.jpg" width="100%" height="100%">
 					<div class="card-body">
 						<h3>Elephant parade</h3>
 						<h3>Time: 14:30 - 15:30</h3>
@@ -130,7 +138,7 @@
             <div class="col-sm-6 d-flex">
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell" >
-					<img src="assets/elephant eating.jpg" width="100%" height="100%">
+					<img src="img/elephant eating.jpg" width="100%" height="100%">
 					<div class="card-body">
 						<h3>Elephant feeding</h3>
 						<h3>Time: 16:00 - 16:30</h3>
@@ -150,7 +158,7 @@
             <div class="col-sm-6 d-flex">
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell" >
-					<img src="assets/joe_tiger.jpg" width="100%" height="100%">
+					<img src="img/joe_tiger.jpg" width="100%" height="100%">
 					<div class="card-body">
 						<h3>Tiger Show</h3>
 						<h3>Time: 17:00 - 18:00</h3>
