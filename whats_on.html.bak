@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<!-- Start of Head Tag -->
+<head>
+<!-- Importing utf encoding, Zoo tab name using the title tag, linking to Bootstrap 5.2.1, and to my own stylesheet. -->
+    <meta charset="utf-8">
+    <title>Paradise Zoo | Whats on Page</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
+    crossorigin="anonymous">
+	<link rel="stylesheet" href="css/css.css">
+</head>
+<!-- Start of Body Tag -->
+<body>
+<!--  -->
+<header>
+        <div class="container-fluid header-img">
+            <img src="./img/header-logo.png" style="height:200px">
+        </div>
+    </header>
+<!-- Added our navigation bar produced by Chris. -->
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/header-logo.png" alt="Paradise Zoo" height="40">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+<!-- Using the href tag to link our webpages together. -->
+					<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="animals.html">Animals</a></li>
+					<li class="nav-item"><a class="nav-link active" href="whats_on.html">Plan Your Day</a></li>
+					<li class="nav-item"><a class="nav-link" href="shoppage.html">Merchandise</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+					<li class="nav-item"><a class="nav-link" href="contactpage.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Start of Main tag, this is where the bulk of the webpage is done. -->
+    <br><main class="container">
+<br>
+<!-- Card row 1 -->
+        <div class="row">
+<!-- Creating 2 columns using col-sm by sizing them as 6+6 to equal 12, and adding d-flex to edit image size/shape. -->
+			<div class="col-sm-6 d-flex">
+<!-- Creating a card and using flex-fill to auto fit the image into the card. -->
+				<div class="card flex-fill swell">
+<!-- Adding an image using img tag, and text using h3 tag. -->
+					<img src="img/bear.PNG" width="100%" height="100%">
+					<div class="card-body">
+						<h3>Bear juggling </h3>
+						<h3>Time: 09:00 - 10:30</h3>
+						<h3>Date: 19/09/2022</h3>
+<!-- Using java script to turn a button into an onclick function, that informs the user their ticket has been ordered. -->						
+						<h3><Button type="button" class="btn btn-primary" onclick="myFunction()">Order Ticket</button></h3>
+								<p id="demo"></p>
+
+								<script>
+									function myFunction() {
+										document.getElementById("demo").innerHTML = "Ticket ordered.";
+									}
+								</script>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 d-flex">
+<!-- Creating a card and using flex-fill to auto fit the image into the card. -->
+				<div class="card flex-fill swell">
+					<img src="img/mascot.PNG" width="100%" height="100%">
+					<div class="card-body">
+						<h3>Mascot show (Kid show)</h3>
+						<h3>Time: 11:00 - 12:00</h3>
+						<h3>Date: 19/09/2022</h3>
+<!-- Using java script to turn a button into an onclick function, that informs the user their ticket has been ordered. -->	
+						<h3><Button type="button" class="btn btn-primary" onclick="myFunction2()">Order Ticket</button></h3>
+								<p id="demo2"></p>
+
+									<script>
+										function myFunction2() {
+											document.getElementById("demo2").innerHTML = "Ticket ordered.";
+										}
+									</script>
+					</div>
+				</div>
+            </div>
+        </div><br>
+<!-- Card row 2 -->
+		<div class="row">
+<!-- Creating 2 columns using col-sm by sizing them as 6+ to equal 12, and adding d-flex to edit image size/shape. -->
+            <div class="col-sm-6 d-flex">
+<!-- Creating a card and using flex-fill to auto fit the image into the card. -->
+				<div class="card flex-fill swell">
+					<img src="img/red panda.jfif" width="100%" height="100%">
+						<div class="card-body">
+						<h3>Red Panda conservation conversation</h3>
+						<h3>Time: 13:00 - 14:00</h3>
+						<h3>Date: 19/09/2022</h3>
+<!-- Using java script to turn a button into an onclick function, that informs the user their ticket has been ordered. -->	
+						<h3><Button type="button" class="btn btn-primary" onclick="myFunction3()">Order Ticket</button></h3>
+							<p id="demo3"></p>
+
+								<script>
+									function myFunction3() {
+										document.getElementById("demo3").innerHTML = "Ticket ordered.";
+									}
+								</script>
+					</div>
+				</div>
+            </div>
+			<div class="col-sm-6 d-flex">
+<!-- Creating a card and using flex-fill to auto fit the image into the card. -->
+				<div class="card flex-fill swell" >
+					<img src="img/parade.jpg" width="100%" height="100%">
+					<div class="card-body">
+						<h3>Elephant parade</h3>
+						<h3>Time: 14:30 - 15:30</h3>
+						<h3>Date: 19/09/2022</h3>
+<!-- Using java script to turn a button into an onclick function, that informs the user their ticket has been ordered. -->	
+						<h3><Button type="button" class="btn btn-primary" onclick="myFunction4()">Order Ticket</button></h3>
+							<p id="demo4"></p>
+
+								<script>
+									function myFunction4() {
+										document.getElementById("demo4").innerHTML = "Ticket ordered.";
+									}
+								</script>
+					</div>
+				</div>
+            </div>
+        </div><br>
+<!-- Card row 3 -->
+        <div class="row">
+<!-- Creating 2 columns using col-sm by sizing them as 6+ to equal 12, and adding d-flex to edit image size/shape. -->
+            <div class="col-sm-6 d-flex">
+<!-- Creating a card and using flex-fill to auto fit the image into the card. -->
+				<div class="card flex-fill swell" >
+					<img src="img/elephant eating.jpg" width="100%" height="100%">
+					<div class="card-body">
+						<h3>Elephant feeding</h3>
+						<h3>Time: 16:00 - 16:30</h3>
+						<h3>Date: 19/09/2022</h3>
+<!-- Using java script to turn a button into an onclick function, that informs the user their ticket has been ordered. -->	
+						<h3><Button type="button" class="btn btn-primary" onclick="myFunction5()">Order Ticket</button></h3>
+							<p id="demo5"></p>
+
+								<script>
+									function myFunction5() {
+										document.getElementById("demo5").innerHTML = "Ticket ordered.";
+									}
+								</script>
+					</div>
+				</div>
+            </div>
+            <div class="col-sm-6 d-flex">
+<!-- Creating a card and using flex-fill to auto fit the image into the card. -->
+				<div class="card flex-fill swell" >
+					<img src="img/joe_tiger.jpg" width="100%" height="100%">
+					<div class="card-body">
+						<h3>Tiger Show</h3>
+						<h3>Time: 17:00 - 18:00</h3>
+						<h3>Date: 19/09/2022</h3>
+<!-- Using java script to turn a button into an onclick function, that informs the user their ticket has been ordered. -->	
+						<h3><Button type="button" class="btn btn-primary" onclick="myFunction6()">Order Ticket</button></h3>
+							<p id="demo6"></p>
+
+								<script>
+									function myFunction6() {
+										document.getElementById("demo6").innerHTML = "Ticket ordered.";
+									}
+								</script>
+					</div>
+				</div>
+            </div>
+<!-- Adding a few br tags to avoid cards overlapping with the footer. -->
+        </div><br>
+
+    </main>
+<!-- Adding Footer produced by Chris. -->
+	<footer class="footer">
+        <div class="container">
+            <p>Paradise Zoo website developed by Bradley, Chris, and Jethro</p>
+        </div>
+    </footer>
+</body>
+  
+</html>

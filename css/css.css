@@ -28,6 +28,7 @@ html, body {
     justify-content: center;
 }
 
+
 .header-txt {
     color: white;
     font-weight: bold;
@@ -49,10 +50,27 @@ html, body {
     padding: 1rem;
 }
 
+iframe {
+    border: none; 
+	padding-bottom: 10px;
+}
+
+.card {
+	background-color: white;
+}
+
+.swell { 
+    transition: all .2s ease-in-out; 
+}
+
+.swell:hover { 
+    transform: scale(1.05); 
+}
+
 .expand { 
     transition: all .2s ease-in-out; 
 }
-    
+
 .expand:hover { 
     transform: scale(1.15); 
 }
@@ -94,3 +112,4 @@ html, body {
 main {
     padding: 0px !important;
 }
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<!-- Start of Head Tag -->
+<head>
+<!-- Importing utf encoding, Zoo tab name using the title tag, linking to Bootstrap 5.2.1, and to my own stylesheet. -->
+    <meta charset="utf-8">
+    <title>Paradise Zoo | About us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
+    crossorigin="anonymous">
+	<link rel="stylesheet" href="css/css.css">
+</head>
+<!-- Start of Body Tag -->
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <img>
+        </div>
+    </header>
+<!-- Added our navigation bar produced by Chris. -->
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container">
+            <ul class="navbar-nav">
+<!-- Using the href tag to link our webpages together. -->
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="animals.html">Animals</a></li>
+                <li class="nav-item"><a class="nav-link" href="whats_on.html">Plan Your Day</a></li>
+                <li class="nav-item"><a class="nav-link" href="shoppage.html">Merchandise</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactpage.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- Start of Main tag, this is where the bulk of the webpage is done. -->
+    <main class="container-fluid">
+<!-- About us text + Image Row 1 -->
+        <br><div class="row">
+<!-- Creating 2 columns using col-sm by sizing them as 7+5 to equal 12. -->
+            <div class="col-sm-7">
+                <div>
+<!-- About us heading displayed using h1 tag, followed by a few paragragh tags. -->
+					<h1>About Us</h1>
+					<p>Home to over 280 native and exotic animals built on lush and lavish surroundings, 
+					   Paradise Zoo has become a must see destination for any traveler looking to experience New Zealand to the fullest.</p>
+					   
+                    <p>Hamilton zoo boasts the largest Tiger enclousure in Oceania dedicated to rescued indian, and pakistanian tigers. 
+					   Take a stroll through the unforgetable Zulu animal park, for an experience not to be missed.
+					   Maybe you're more interested in catching, and releasing native fish that live in the natural Orangatuho River, the river the Zoo was built around because of its rich in variety of aquatic species.</p>
+					   
+                    <p>Besides being a petting and army recruitment park, Paradise Zoo is committed to acuire land in order to conserve native habitat for animals and native founa.</p>
+					
+					<p>By visiting our park for $25 per adult, and $10 per child you directly contribute to research projects, animal well-being, food for our hungry elephants, and breeding programmes for endangered frog species.</p>
+                </div>
+            </div>
+			<div class="col-sm-5">
+<!-- Adding zoo image to break the text up and make the page look more appealing, and using flex-fill to auto fit the image into the card. -->
+				<div class="card flex-fill">
+					<img src="img/landscape.jpg">
+				</div>
+            </div>
+        </div><br>
+<!-- Tiger tribute row 1 -->
+		<div class="row">
+<!-- Creating 2 columns using col-sm by sizing them as 9+3 to equal 12. -->
+			<div class="col-sm-3">
+                <div>
+<!-- Using flex-fill to auto fit the image into the card. -->
+					<div class="card flex-fill">
+						<img src="img/tiger.jpg">
+					</div>
+                </div>
+            </div>
+            <br><div class="col-sm-9">
+                <div>
+					<h1>Memorial</h1>
+					<p>As many of you may have seen in the news, 
+					   Tuesday 11 October was a big day for all of us at Paradise Zoo, 
+					   our oldest male lion Fidel Catstro died from lung cancer contracted during his
+					   time in the Tadoba Andhari Tiger Reserve.</p>
+					   <p>Fidel will forever be remembered here at Paradise Zoo, his likeness will
+						be preserved in a 1.5m, by 1.2m Oil painting. A painting that was commissioned
+						using only a few thousand dollars from the Red Panda wildlife fund.</p>
+                </div>
+            </div>
+        </div><br>
+<!-- Map row 1 -->
+		<div class="row" style="height: 800px">
+<!-- Map linked using iframe row -->
+			<div class="col-sm-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11993.701098366088!2d174.7763921!3d-41.277848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfdd7bc2e2ba555f7!2sNew%20Zealand%20Parliament%20Buildings!5e0!3m2!1sen!2snz!4v1663549621543!5m2!1sen!2snz" width="100%" height="100%" allowfullscreen=""></iframe>
+            </div>
+			
+        </div>
+    </main>
+<!-- Adding Footer produced by Chris. -->
+    <footer class="footer">
+        <div class="container">
+            <p>Paradise Zoo website developed by Bradley, Chris, and Jethro</p>
+        </div>
+    </footer>
+</body>
+  
+</html>
