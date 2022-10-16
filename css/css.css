@@ -9,6 +9,19 @@ html, body {
     background-color: #37393a;
     margin-top: 50px;
     padding-top: 20px;
+    bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.footer a {
+    color: rgba(241, 246, 255, 0.788);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer ul {
+    list-style: none;
 }
 
 .footer p {
@@ -72,7 +85,7 @@ iframe {
 }
 
 .expand:hover { 
-    transform: scale(1.15); 
+    transform: scale(1.1); 
 }
 
 .hero {
@@ -101,17 +114,28 @@ iframe {
 
 .home-card {
     overflow: hidden;
+    max-width: 60rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
-.home-card-img {
+.home-card img {
+    max-width: 500px;
     height: 200px;
     object-fit: cover;
-    max-width: 100%;
+    object-position: center;
 }
 
 main {
     padding: 0px !important;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(45, 129, 73);
+}
 
-
+.home-row {
+    display:flex;
+}

@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <head>
+    
+    <!-- Get Bootstrap's CSS files from CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
     crossorigin="anonymous">
+
+    <!-- Load local CSS file -->
     <link rel="stylesheet" href="css/css.css">
+
+    <!-- Load Bootstrap's JS from CDN to provide collapsible functionality for navbar-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
     crossorigin="anonymous"></script>
@@ -17,15 +23,20 @@
             <img src="./img/header-logo.png" style="height:200px">
         </div>
     </header>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-success navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="./img/header-logo.png" alt="Paradise Zoo" height="40">
-              </a>
+            </a>
+            <!-- Button for toggling the collapsible navbar when it snaps below its breakpoint -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Segment of navbar that collapses below the breakpoint -->
             <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- List of navigation links -->
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="animals.html">Animals</a></li>
@@ -38,75 +49,89 @@
         </div>
     </nav>
 
-
+    <!-- cards are arranged into three columns by default, and responsively snap down to one -->
     <main class="container">
-        
-        <div class="row">
+        <h1 class="text-center pt-5">Meet Our Animals</h1>
+        <div class="row flex-grow-1">
             <div class="col-lg mt-4">
-                <div class="animal-card expand m-2">
-                    <img src="https://placekitten.com/700/200" class="animal-img">
+                <div class="animal-card card expand">
+                    <img src="./img/animal-redpanda.jpg" class="animal-img">
                     <div class="animal-txt">
-                        <h4>Animal 1</h4>
-                        <p>In hac habitasse platea dictumst. Quisque in magna sapien. 
-                            Phasellus sit amet bibendum nunc, nec laoreet lacus. Praesent 
-                            malesuada ipsum odio, sit amet gravida nibh lacinia ut.</p>
+                        <h4>Red Panda - <em>Ailurus fulgens</em></h4>
+                        <p>The red panda, also known as the lesser panda, 
+                            is a small mammal native to the eastern Himalayas and southwestern China. 
+                            It has dense reddish-brown fur with a black belly and legs, white-lined ears, 
+                            a mostly white muzzle and a ringed tail. It is well adapted to climbing due to 
+                            its flexible joints and curved, semi-retractile claws. The red panda is not 
+                            closely related to the giant panda, despite the name.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg mt-4">
-                <div class="animal-card expand m-2">
-                    <img src="https://placekitten.com/701/200" class="animal-img">
+                <div class="animal-card card expand m-2">
+                    <img src="./img/animal-whiterhino.jpg" class="animal-img">
                     <div class="animal-txt">
-                        <h4>Animal 2</h4>
-                        <p>In hac habitasse platea dictumst. Quisque in magna sapien. 
-                            Phasellus sit amet bibendum nunc, nec laoreet lacus. Praesent 
-                            malesuada ipsum odio, sit amet gravida nibh lacinia ut.</p>
+                        <h4>White Rhino - <em>Ceratotherium simum</em></h4>
+                        <p>The white rhinoceros, white rhino, or square-lipped rhinoceros is the largest 
+                            extant species of rhinoceros. It has a wide mouth used for grazing and is the 
+                            most social of all rhino species. The white rhinoceros consists of two subspecies: 
+                            the southern white rhinoceros, with an estimated 19,682–21,077 wild-living animals 
+                            in the year 2015, and the much rarer northern white rhinoceros.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg mt-4">
-                <div class="animal-card expand m-2">
-                    <img src="https://placekitten.com/703/200" class="animal-img">
+                <div class="animal-card card expand m-2">
+                    <img src="./img/animal-bear.jpg" class="animal-img">
                     <div class="animal-txt">
-                        <h4>Animal 3</h4>
-                        <p>In hac habitasse platea dictumst. Quisque in magna sapien. 
-                            Phasellus sit amet bibendum nunc, nec laoreet lacus. Praesent 
-                            malesuada ipsum odio, sit amet gravida nibh lacinia ut.</p>
+                        <h4>Brown Bear - <em>Ursus arctos</em></h4>
+                        <p>The brown bear (Ursus arctos) is a large bear species found across Eurasia and North America. 
+                            In North America, the populations of brown bears are called grizzly bears, while the 
+                            subspecies that inhabits the Kodiak Islands of Alaska is known as the Kodiak bear. 
+                            It is one of the largest living terrestrial members of the order Carnivora, rivaled 
+                            in size only by its closest relative, the polar bear, which is much less variable 
+                            in size and slightly bigger on average.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg mt-4">
-                <div class="animal-card expand m-2">
-                    <img src="https://placekitten.com/704/200" class="animal-img">
+                <div class="animal-card card expand m-2">
+                    <img src="./img/animal-elephant.jpg" class="animal-img">
                     <div class="animal-txt">
-                        <h4>Animal 1</h4>
-                        <p>In hac habitasse platea dictumst. Quisque in magna sapien. 
-                            Phasellus sit amet bibendum nunc, nec laoreet lacus. Praesent 
-                            malesuada ipsum odio, sit amet gravida nibh lacinia ut.</p>
+                        <h4>African Elephant - <em>Loxodonta africana</em></h4>
+                        <p>The African Elephant is the largest living terrestrial animal!  It is distributed across 37 
+                            African countries and inhabits forests, grasslands and woodlands, wetlands, and agricultural land. 
+                            Elephants are a social mammal, travelling in herds composed of cows and  their offspring, while adult 
+                            bulls usually live alone or in small bachelor groups. It is a herbivore, feeding on grasses, creepers, 
+                            herbs, leaves, and bark.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg mt-4">
-                <div class="animal-card expand m-2">
-                    <img src="https://placekitten.com/705/200" class="animal-img">
+                <div class="animal-card card expand m-2">
+                    <img src="./img/animal-tiger.jpg" class="animal-img">
                     <div class="animal-txt">
-                        <h4>Animal 2</h4>
-                        <p>In hac habitasse platea dictumst. Quisque in magna sapien. 
-                            Phasellus sit amet bibendum nunc, nec laoreet lacus. Praesent 
-                            malesuada ipsum odio, sit amet gravida nibh lacinia ut.</p>
+                        <h4>Siberian Tiger - <em>Panthera Tigris</em></h4>
+                        <p>The tiger is the largest living cat species and a member of the genus Panthera. It is most recognisable 
+                            for its dark vertical stripes on orange fur with a white underside. It is territorial and generally a 
+                            solitary but social predator, requiring large contiguous areas of habitat to support its requirements 
+                            for prey and rearing of its offspring. Tiger cubs stay with their mother for about two years and then 
+                            become independent, leaving their mother's home range to establish their own. </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg mt-4">
-                <div class="animal-card expand m-2">
-                    <img src="https://placekitten.com/706/200" class="animal-img">
+                <div class="animal-card card expand m-2">
+                    <img src="./img/animal-cheetah.jpg" class="animal-img">
                         <div class="animal-txt">
-                            <h4>Animal 3</h4>
-                            <p>In hac habitasse platea dictumst. Quisque in magna sapien. 
-                                Phasellus sit amet bibendum nunc, nec laoreet lacus. Praesent 
-                                malesuada ipsum odio, sit amet gravida nibh lacinia ut.</p>
+                            <h4>Cheetah - <em>Acinonux jubatus</em></h4>
+                            <p>The cheetah is a large cat native to Africa and central Iran. It is the fastest land animal, estimated 
+                                to be capable of running at 80 to 128 km/h (50 to 80 mph) with the fastest reliably recorded speeds 
+                                being 93 and 98 km/h (58 and 61 mph), and as such has several adaptations for speed, including a light 
+                                build, long thin legs and a long tail. The coat is typically tawny to creamy white or pale buff and is 
+                                mostly covered with evenly spaced, solid black spots</p>
                         </div>
                     </div>
                 </div>
@@ -114,9 +139,26 @@
         </div>
     </main>
 
+    <!-- footer containing website attribution and secondary sitemap -->
     <footer class="footer">
         <div class="container">
-            <p>Paradise Zoo website developed by Bradley, Chris, and Jethro</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="text-start"><strong>Sitemap</strong></p>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="animals.html">Animals</a></li>
+                        <li><a href="whats_on.html">Plan Your Day</a></li>
+                        <li><a href="shoppage.html">Merchandise</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contactpage.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </div>
+            <p class="text-center">Paradise Zoo website developed by Bradley, Chris, and Jethro</p>
         </div>
     </footer>
 </body>

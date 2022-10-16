@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <head>
+    <!-- Get Bootstrap's CSS files from CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
     crossorigin="anonymous">
 
+    <!-- Load local CSS file -->
     <link rel="stylesheet" href="css/css.css">
 
+    <!-- Load Bootstrap's JS from CDN to provide collapsible functionality for navbar-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
     crossorigin="anonymous"></script>
@@ -15,19 +18,25 @@
 
 <body>
     <header>
+        <!-- Header image and Paradise Zoo logo -->
         <div class="container-fluid header-img">
             <img src="./img/header-logo.png" style="height:200px">
         </div>
     </header>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-success navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="./img/header-logo.png" alt="Paradise Zoo" height="40">
-              </a>
+            </a>
+            <!-- Button for toggling the collapsible navbar when it snaps below its breakpoint -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Segment of navbar that collapses below the breakpoint -->
             <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- List of navigation links -->
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="animals.html">Animals</a></li>
@@ -41,52 +50,75 @@
     </nav>
 
     <main class="container-fluid">
+        <!-- hero provides parallaxed background image-->
         <div class="hero">
             <div class="text-center hero-container container">
 
-                <h1>Welcome to Paradise Zoo</h1>
-                <p>An award-winning zoo, featuring animals from all over the globe. Come and see our... 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Duis convallis arcu nec tortor vestibulum, sit amet placerat dui eleifend. 
-                    Curabitur ultricies tortor sed ipsum convallis, quis porttitor tortor gravida. 
-                    Duis sit amet libero ut purus maximus vehicula. Nulla blandit ultricies gravida. 
-                    Aliquam sit amet sollicitudin justo, sit amet hendrerit quam. Sed blandit neque 
-                    ut sapien egestas pulvinar. Suspendisse felis diam, suscipit id tortor sit amet, 
-                    lobortis elementum nisl. Pellentesque habitant morbi tristique senectus et netus 
-                    et malesuada fames ac turpis egestas. Donec molestie aliquet risus, nec consectetur 
-                    lorem. Maecenas convallis porttitor mauris in mollis. Nam egestas hendrerit mauris, 
-                    non dignissim magna scelerisque vel. Click below to learn more and see what we have to offer.</p>
+                <h1><strong>Welcome to Paradise</strong></h1>
+                <h4>Home to over 280 native and exotic animals built on lush and lavish surroundings, 
+                    Paradise Zoo has become a must see destination for any traveler looking to experience 
+                    New Zealand to the fullest. Click below to learn more and see what we have to offer.</h4>
+                <br/>
+
+                <!-- Scrolls down on click to bring the rest of the content to the top of the screen -->
                 <a class="btn btn-success" href="#fold">See More</a>
 
             </div>
         </div>
+        <!-- "fold" provides target for "See More" button-->
+        <!-- rows and cols used to arrange the extra content hooks-->
         <div class="fold container pt-5" id="fold">
-            <div class="row">
-                <div class="col-3 home-card"><img src="https://placekitten.com/500/200"></div>
-                <div class="col text-end"><h3>Meet Our Animals</h3></div>
+            <div clas="row" style="display:flex">
+                <div class="home-card text-center col-lg"><img src="./img/animal-redpanda.jpg">
+                    <h2><a href="animals.html">Meet Our Animals</a></h2>
+                    <h4>See the list of wonderful animals that live here in Paradise, and learn some more about each of them.</h4>
+                </div>
+
+                <div class="home-card text-center col-lg"><img src="./img/animal-elephant.jpg">
+                    <h2><a href="whats_on.html">Plan Your Day</a></h2>
+                    <h4>Check out what activities you can get up to within the zoo, and book your place in advance. You don't want to miss out!</h4>
+                </div>
             </div>
-            <div class="row">
-                <div class="col text-start"><h3>Plan Your Day</h3></div>
-                <div class="col-3 home-card"><img src="https://placekitten.com/500/200"></div>
+
+            <div clas="row" style="display:flex">
+                <div class="home-card text-center col-lg"><img src="./img/animal-tiger.jpg">
+                    <h2><a href="shoppage.html">Support The Zoo</a></h2>
+                    <h4>Check out the sweet swag we have available, and put your money towards supporting Paradise.</h4>
+                </div>
+
+                <div class="home-card text-center col-lg"><img src="./img/animal-bear.jpg">
+                    <h2><a href="about.html">Who We Are</a></h2>
+                    <h4>Learn a bit more about the zoo, the people behind it, and where all that money we charge you up the front happens to end up.</h4>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-3 home-card"><img src="https://placekitten.com/500/200"></div>
-                <div class="col text-end"><h3>Support The Zoo</h3></div>
-            </div>
-            <div class="row">
-                <div class="col text-start"><h3>Who We Are</h3></div>
-                <div class="col-3 home-card"><img src="https://placekitten.com/500/200"></div>
-            </div>
-            <div class="row">
-                <div class="col-3 home-card"><img src="https://placekitten.com/500/200"></div>
-                <div class="col text-end"><h3>Get In Touch</h3></div>
+                <div class="home-card text-center col-lg m-auto"><img src="./img/animal-cheetah.jpg">
+                    <h2><a href="contactpage.html">Get In Touch</a></h2>
+                    <h4>Have something you'd like to say to our faces? Here's the place to do it.</h4>
+                </div>
             </div>
         </div>
     </main>
 
+    <!-- footer containing website attribution and secondary sitemap -->
     <footer class="footer">
         <div class="container">
-            <p>Paradise Zoo website developed by Bradley, Chris, and Jethro</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="text-start"><strong>Sitemap</strong></p>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="animals.html">Animals</a></li>
+                        <li><a href="whats_on.html">Plan Your Day</a></li>
+                        <li><a href="shoppage.html">Merchandise</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contactpage.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </div>
+            <p class="text-center">Paradise Zoo website developed by Bradley, Chris, and Jethro</p>
         </div>
     </footer>
 </body>
