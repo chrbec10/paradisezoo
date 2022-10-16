@@ -42,7 +42,7 @@
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell">
 <!-- Adding an image using img tag, and text using h3 tag. -->
-					<img src="img/bear.PNG" width="100%" height="100%">
+					<img src="assets/bear.PNG" width="100%" height="100%">
 					<div class="card-body">
 						<h3>Bear juggling </h3>
 						<h3>Time: 09:00 - 10:30</h3>
@@ -62,7 +62,7 @@
             <div class="col-sm-6 d-flex">
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell">
-					<img src="img/mascot.PNG" width="100%" height="100%">
+					<img src="assets/mascot.PNG" width="100%" height="100%">
 					<div class="card-body">
 						<h3>Mascot show (Kid show)</h3>
 						<h3>Time: 11:00 - 12:00</h3>
@@ -86,7 +86,7 @@
             <div class="col-sm-6 d-flex">
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell">
-					<img src="img/red panda.jfif" width="100%" height="100%">
+					<img src="assets/red panda.jfif" width="100%" height="100%">
 						<div class="card-body">
 						<h3>Red Panda conservation conversation</h3>
 						<h3>Time: 13:00 - 14:00</h3>
@@ -106,7 +106,7 @@
 			<div class="col-sm-6 d-flex">
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell" >
-					<img src="img/parade.jpg" width="100%" height="100%">
+					<img src="assets/parade.jpg" width="100%" height="100%">
 					<div class="card-body">
 						<h3>Elephant parade</h3>
 						<h3>Time: 14:30 - 15:30</h3>
@@ -130,7 +130,7 @@
             <div class="col-sm-6 d-flex">
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell" >
-					<img src="img/elephant eating.jpg" width="100%" height="100%">
+					<img src="assets/elephant eating.jpg" width="100%" height="100%">
 					<div class="card-body">
 						<h3>Elephant feeding</h3>
 						<h3>Time: 16:00 - 16:30</h3>
@@ -150,7 +150,7 @@
             <div class="col-sm-6 d-flex">
 <!-- Creating a card and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill swell" >
-					<img src="img/joe_tiger.jpg" width="100%" height="100%">
+					<img src="assets/joe_tiger.jpg" width="100%" height="100%">
 					<div class="card-body">
 						<h3>Tiger Show</h3>
 						<h3>Time: 17:00 - 18:00</h3>

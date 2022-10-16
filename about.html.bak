@@ -56,7 +56,7 @@
 			<div class="col-sm-5">
 <!-- Adding zoo image to break the text up and make the page look more appealing, and using flex-fill to auto fit the image into the card. -->
 				<div class="card flex-fill">
-					<img src="img/landscape.jpg">
+					<img src="assets/landscape.jpg">
 				</div>
             </div>
         </div><br>
@@ -67,7 +67,7 @@
                 <div>
 <!-- Using flex-fill to auto fit the image into the card. -->
 					<div class="card flex-fill">
-						<img src="img/tiger.jpg">
+						<img src="assets/tiger.jpg">
 					</div>
                 </div>
             </div>
