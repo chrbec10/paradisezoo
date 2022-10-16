@@ -1,0 +1,43 @@
+.footer { 
+    bottom: 0;
+    width: 100%;
+    min-height: 60px;
+    background-color: #37393a;
+    padding-top:20px;
+}
+
+.footer p {
+    color: lightgray;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.header-img {
+    background-image:url("../img/header.jpg");
+    width:100%;
+    height:200px;
+    background-size:cover;
+    background-position:center;
+}
+
+iframe {
+    border: none; 
+	padding-bottom: 10px;
+}
+
+body {
+	background-color: #E3FAE9;
+}
+
+
+.card {
+	background-color: #C5E6CB;
+}
+
+.swell { 
+    transition: all .2s ease-in-out; 
+}
+    
+.swell:hover { 
+    transform: scale(1.05); 
+}

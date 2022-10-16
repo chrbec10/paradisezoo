@@ -13,7 +13,7 @@
 <!-- Start of Body Tag -->
 <body>
 <!--  -->
-	<header>
+<header>
         <div class="container-fluid header-img">
             <img src="./img/header-logo.png" style="height:200px">
         </div>
@@ -186,4 +186,5 @@
         </div>
     </footer>
 </body>
+  
 </html>

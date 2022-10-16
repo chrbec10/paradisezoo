@@ -4,6 +4,7 @@ html, body {
 }
 
 .footer { 
+    bottom: 0;
     width: 100%;
     min-height: 60px;
     background-color: #37393a;
@@ -28,6 +29,7 @@ html, body {
     justify-content: center;
 }
 
+
 .header-txt {
     color: white;
     font-weight: bold;
@@ -36,7 +38,7 @@ html, body {
 .animal-card {
     border-radius: 4px;
     overflow: hidden;
-    background-color: white;
+    background-color: #C5E6CB;
 }
 
 .animal-img {
@@ -47,12 +49,24 @@ html, body {
 
 .animal-txt {
     padding: 1rem;
+
+iframe {
+    border: none; 
+	padding-bottom: 10px;
 }
 
-.expand { 
+.card {
+	background-color: #C5E6CB;
+}
+
+.swell { 
     transition: all .2s ease-in-out; 
 }
-    
+
+.swell:hover { 
+    transform: scale(1.05); 
+}
+
 .expand:hover { 
     transform: scale(1.15); 
 }
@@ -94,3 +108,6 @@ html, body {
 main {
     padding: 0px !important;
 }
+
+
+
