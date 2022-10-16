@@ -33,16 +33,20 @@ html, body {
     font-weight: bold;
 }
 
-.card {
-    background-color: green;
+.animal-card {
     border-radius: 4px;
     overflow: hidden;
+    background-color: white;
 }
 
 .animal-img {
     height: 200px;
     max-width: 100%;
     object-fit: cover;
+}
+
+.animal-txt {
+    padding: 1rem;
 }
 
 .expand { 
