@@ -4,7 +4,6 @@ html, body {
 }
 
 .footer { 
-    bottom: 0;
     width: 100%;
     min-height: 60px;
     background-color: #37393a;
