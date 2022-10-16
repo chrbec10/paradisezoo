@@ -13,14 +13,11 @@
 }
 
 .header-img {
-    background-image: url("../img/header.jpg");
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image:url("../img/header.jpg");
+    width:100%;
+    height:200px;
+    background-size:cover;
+    background-position:center;
 }
 
 iframe {
