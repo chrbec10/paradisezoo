@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <div class="container-fluid header-img">
+        <img src="images\logo2.png">
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg bg-success">
+    <div class="container">
+        <ul class="navbar-nav">
+            <!-- Remember to give the current page the "active" class. -->
+            <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="animals.html">Animals</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Plan Your Day</a></li>
+            <li class="nav-item"><a class="nav-link" href="shoppage.html">Merchandise</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact | Paradise Zoo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 p-5 row justify-content-center">
+                    <h1 class="fw-bold">Contact Us</h1>
+                    <h3>Enquire Below</h3>
+                    <form name="contactForm" action="/contactpage.html" onsubmit="return validateForm()" method="get">
+                        <label for="nameID" class="form-label">Name </label><br>
+                        <input type="text" class="form-control" name="name" placeholder="First and last name"><br>
+                        <label for="emailID" class="form-label">Email</label><br>
+                        <input type="email"  class="form-control" name="email" placeholder="example@example.com"><br>
+                        <label for="phone" class="form-label">Contact number</label><br>
+                        <input type="tel" class="form-control" name="number"><br>
+                        <label for="messageID" class="form-label">Message</label><br>
+                        <textarea name="comment" class="form-control" name="message" form="message"></textarea><br><br>
+                        <input type="submit" class="btn btn-primary" value="Submit" onclick="return validateForm()">
+                    </form><br>
+                </div>
+                <script>
+                    function validateForm() {
+                        let a = document.forms["contactForm"]["name"].value;
+                        let b = document.forms["contactForm"]["email"].value;
+                        let c = document.forms["contactForm"]["number"].value;
+                        let d = document.forms["contactForm"]["message"].value;
+                        if(name.length < 5){
+                            text = "Please Enter valid Name";
+                            error_message.innerHTML = text;
+                            return false;
+                        }
+                        if(message.length <= 30){
+                            alert("Please Enter More Than 30 Characters");
+                        
+                        return false;
+                        }
+                        alert("Form Submitted Successfully!");
+                        return true;
+                    }
+                </script>
+                <div class="col-6 pt-5">
+                    <br><br><br><br><br>
+                    <img src="images\redpanda.jpeg" class="img-fluid rounded">
+                </div>
+                <div class="col-sm-6 p-5">
+                    <h1 class="fw-bold">Mailing address</h1>
+                    <p> Paradise Zoo<br>
+                        123 fake street<br>
+                        Hamilton, Waikato 3729<br>
+                        New Zealand
+                    </p>
+                </div>
+                <div class="col-6 pt-5">
+                    <h1 class="fw-bold">Donations</h1>
+                    <p>We at Paradise Zoo accept donations. If you would like to donate please go to the following website and learn more about what you are donating to.</p>
+                    <form action="https://www.freedomforanimals.org.uk/zoos">
+                        <input type="submit" class="btn btn-primary" value="Donation link">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>        
+</body>
+</main>
+<br>
+<footer class="footer">
+    <div class="container">
+        <p>Paradise Zoo website developed by Bradley, Chris, and Jethro</p>
+    </div>
+</footer>
+
+</html>
