@@ -51,6 +51,7 @@ html, body {
     border-radius: 4px;
     overflow: hidden;
     background-color: white;
+    height: 530px;
 }
 
 .animal-img {
